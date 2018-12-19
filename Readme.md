@@ -1,5 +1,4 @@
-# Project Title
-## Cloud Watch monitor with Lambda function.
+# Cloud Watch monitor with Lambda function.
 
 ## About Function
 In the repository there is lambda code (lambda.py) that create AWS cloud watch alarms when a new instance is launched . As the alram will be at ok stage or at alarm stage a mail is send to a particular mail id . This mail id set by environment variable e_mailid which take SNS as it's value.
