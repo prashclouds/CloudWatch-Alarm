@@ -10,18 +10,18 @@ In the repository there is lambda code (lambda.py) that create AWS cloud watch a
  * create a lamdba function with Python 3.7 compiler 
     * role having access to AmazonEC2,CloudWatch,AmazonSNS
     * rule  Service Name 
-    	 - Under cloud watch need to create rule . Select Event Patterns 
-	 - Here, Service Name is set to Auto Scaling 
-	 - Event type is set to Instance Launch and Terminate 
-	 - Specific Instance event(s) is set to EC2 Instance Launch Successful
-	 - Select Any group name
-	 - Under Lambda Funtion is  given the  lambda  function name and give name  to the rule 
+      - Under cloud watch need to create rule . Select Event Patterns 
+      - Here, Service Name is set to Auto Scaling 
+      - Event type is set to Instance Launch and Terminate 
+      - Specific Instance event(s) is set to EC2 Instance Launch Successful	    
+      - Select Any group name 
+      - Under Lambda Funtion is  given the  lambda  function name and give name  to the rule 
 	
 * create Environment variables
-	- Mem_Thr_byte : 500000000 <vlaue  in bytes>
-	- SNS_Topic : sns  
-	- TagName : Name
-	- TagValue: value (alram will trigger for those instances which have  this value)
+  - Mem_Thr_byte : 500000000 <vlaue  in bytes>
+  - SNS_Topic : sns  
+  - TagName : Name
+  - TagValue: value (alram will trigger for those instances which have  this value)
   
 	
 * Paste the code save and test by lauching a new instance 
