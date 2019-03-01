@@ -8,8 +8,8 @@ In the repository there is lambda code (lambda.py) that create AWS cloud watch a
   
 ###### Installation 
  * create a lamdba function with Python 3.7 compiler 
-    * role having access to AmazonEC2,CloudWatch,AmazonSNS
-    * rule  Service Name 
+    * create role having access to AmazonEC2,CloudWatch,AmazonSNS
+    * create rule  
       - Under cloud watch need to create rule . Select Event Patterns 
       - Here, Service Name is set to Auto Scaling 
       - Event type is set to Instance Launch and Terminate 
